@@ -71,22 +71,6 @@ document.documentElement.setAttribute('data-theme', 'dark')
 // set light theme
 document.documentElement.setAttribute('data-theme', 'light')
 ```
-
-When using frameworks, set this early (e.g., in `index.html` or `src/main.tsx`) or provide a theme toggle like the demo does.
-
-- Tailwind users
-
-This package also exports a Tailwind preset (`tailwind-preset.cjs`). To use it, add the preset to your Tailwind config:
-
-```js
-// tailwind.config.cjs
-module.exports = {
-	presets: [require('@asafarim/shared-tokens/tailwind-preset')],
-}
-```
-
-The preset maps many tokens into Tailwind utilities so you can consume them with the Tailwind class API.
-
 ---
 
 ## Publishing

@@ -2,7 +2,7 @@
   "name": "@asafarim/shared-tokens",
   "description": "A shared design tokens package for use across multiple projects.",
   "author": "Ali Safari <ali@asafarim.com> (https://github.com/AliSafari-IT)",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": false,
   "publishConfig": {
     "access": "public"
