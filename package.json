@@ -2,7 +2,7 @@
   "name": "@asafarim/shared-tokens",
   "description": "A shared design tokens package for use across multiple projects.",
   "author": "Ali Safari <ali@asafarim.com> (https://github.com/AliSafari-IT)",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -17,7 +17,8 @@
   "types": "index.d.ts",
     "style": "index.css",
   "sideEffects": [
-    "*.css"
+    "*.css",
+    "styles/**"
   ],
   "scripts": {
     "build": "echo 'No build needed for shared-tokens'",
@@ -27,22 +28,33 @@
   },
  "files": [
     "index.css",
+    "base.css",
     "index.js",
     "index.d.ts",
     "tailwind-preset.cjs",
+    "styles/",
     "package.json"
   ],
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.js",
-      "require": "./tailwind-preset.cjs"
+      "require": "./index.js"
     },
-    "./index.css": "./index.css",
-    "./tailwind-preset": "./tailwind-preset.cjs"
+    "./index.css": "./index.css"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
     "typescript": "~5.8.3"
-  }
+  },
+  "keywords": [
+    "asafarim",
+    "CSS tokens",
+    "shared tokens",
+    "design tokens",
+    "CSS variables",
+    "pure CSS"
+  ]
 }
+
